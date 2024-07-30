@@ -1,5 +1,5 @@
 # Abdelhay's Personal Portfolio Website
-
+![Portfolio](https://github.com/abdelhaymallouli1/my-personal-portfolio-website/blob/main/assets/img/picture.png)
 This repository contains the source code and files for my personal portfolio website. The website is built using HTML, CSS, and JavaScript.
 
 ## Description
@@ -38,4 +38,4 @@ If you have any questions or inquiries, please feel free to reach out to me thro
 
 Thank you for visiting my personal portfolio repository! I hope you find it informative and visually appealing.
 
-![Portfolio](https://github.com/abdelhaymallouli1/my-personal-portfolio-website/blob/main/assets/img/picture.png)
+
