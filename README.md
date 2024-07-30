@@ -38,4 +38,4 @@ If you have any questions or inquiries, please feel free to reach out to me thro
 
 Thank you for visiting my personal portfolio repository! I hope you find it informative and visually appealing.
 
-![Portfolio](https://github.com/Venkateeshh/Portfolio-Website/assets/117290841/d05942e3-6970-47eb-9757-482f11bb6044)
+![Portfolio]()
