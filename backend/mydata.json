@@ -1,0 +1,30 @@
+{
+    "about": {
+      "name": "Abdelhay",
+      "tagline": "Aspiring Full-Stack Developer",
+      "bio": "Passionate about coding and creating impactful web applications.",
+      "skills": ["JavaScript", "HTML", "CSS", "React", "Node.js"],
+      "experience": [
+        {
+          "role": "Frontend Developer",
+          "company": "XYZ Inc.",
+          "duration": "Jan 2023 - Dec 2023",
+          "details": "Built responsive web interfaces and optimized UI/UX."
+        }
+      ]
+    },
+    "projects": [
+      {
+        "title": "Weather App",
+        "description": "A real-time weather forecasting app.",
+        "technologies": ["JavaScript", "API", "HTML"],
+        "link": "https://github.com/abdelhay/weather-app"
+      },
+      {
+        "title": "Bookstore App",
+        "description": "An app for browsing and purchasing books online.",
+        "technologies": ["React", "Firebase"],
+        "link": "https://github.com/abdelhay/bookstore-app"
+      }
+    ]
+  }
