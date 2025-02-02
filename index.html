@@ -10,6 +10,7 @@
 
     <header>
         <div class="logo">MLL<span> Adelhay</span></div>
+        <button class="menu-toggle">☰</button>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -20,7 +21,6 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-        <div class="menu-toggle">☰</div>
         <a href="#" class="download-btn">Download CV</a>
     </header>
 
@@ -48,6 +48,20 @@
         </div>
     </section>
 
+    <section class="about">
+        <div class="left-section"><img class="about-pic" src="./assests/imgs/4412009.jpg" alt=""></div>
+        
+        <div class="right-section">
+            <h2>About Me</h2>
+            <p >
+                Hi, I'm Abdelhay , an <span id="year"></span>-year-old passionate about <span class="color">programming and technology</span> 💻. I am currently learning various programming languages and developing my skills in software development. In addition to my technical pursuits, I enjoy writing inspirational content to motivate and inspire others .
+
+I am always eager to learn new things and take on challenging projects that help me grow both personally and professionally . My goal is to contribute to the tech community and make a <span class="color">positive impact </span>through innovative solutions and creative thinking .
+
+            </p>
+        </div>
+    </section>
+
 
     <!-- second section -->
     <section class="portfolio">
@@ -59,26 +73,74 @@
                 is responsive and adaptive design
             </p>
 
-            <div class="portfolio-filters">
-                <span class="active">All</span>
-                <span>Youtube</span>
-                <span>Vimeo</span>
-                <span>Soundcloud</span>
-                <span>Popup</span>
-                <span>Detail</span>
-            </div>
 
             <div class="portfolio-grid">
-                <div class="portfolio-item"><img src="image1.jpg" alt="Item 1"></div>
-                <div class="portfolio-item"><img src="image2.jpg" alt="Item 2"></div>
-                <div class="portfolio-item"><img src="image3.jpg" alt="Item 3"></div>
-                <div class="portfolio-item"><img src="image4.jpg" alt="Item 4"></div>
-                <div class="portfolio-item"><img src="image5.jpg" alt="Item 5"></div>
-                <div class="portfolio-item"><img src="image6.jpg" alt="Item 6"></div>
+
             </div>
         </div>
     </section>
 
+
+    <!-- section of contact -->
+    <section class="contact-me">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <h3>I Want To Hear From You.</h3>
+        </div>
+    
+        <div class="contact-section">
+            <div class="left-row ">
+                <ul>
+                    <li>
+                        <div class="list_inner">
+                            <div class="icon greenBackground">
+                                <i class="icon-mail-1 greenText"></i>
+                            </div>
+                            <div class="short">
+                                <h3>Email</h3>
+                                <span><a href="#">Abdelhay.mallouli@gmail.com</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list_inner">
+                            <div class="icon purpleBackground">
+                                <i class="icon-phone purpleText"></i>
+                            </div>
+                            <div class="short">
+                                <h3>Phone</h3>
+                                <span>+212 456 7890</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="right wow " >
+                <div class="fields">
+                    <form  class="contact_form" id="contact_form" >
+                        <div class="returnmessage"></div>
+                        
+                        <div class="input_list">
+                            <ul>
+                                <li><input id="name" type="text" placeholder="Your Name"></li>
+                                <li><input id="email" type="text" placeholder="Your Email"></li>
+                                <li><input id="phone" type="number" placeholder="Your Phone"></li>
+                                <li><input id="subject" type="text" placeholder="Subject"></li>
+                            </ul>
+                        </div>
+                        <div class="message_area">
+                            <textarea id="message" placeholder="Write your message here"></textarea>
+                        </div>
+                        <div class="submit-button">
+                            <a id="send_message" href=""><span>Submit Now</span></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 
     <script src="script.js"></script>
 </body>
