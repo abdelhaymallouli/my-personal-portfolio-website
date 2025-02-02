@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --primary-color : #914bf1;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost", serif;
+}
+
+body {
+    background: #f7f7f7;
+    color: #333;
+}
+
+header {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: transparent;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-color)
+}
+
+.logo span {
+    color: black;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all .3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color)
+}
+
+.download-btn {
+    border: 2px solid var(--primary-color);
+    color: black;
+    border-radius: 50px;
+    padding: 6px 30px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    z-index: 1;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.download-btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0%; 
+    background: var(--primary-color);
+    border-radius: 50px; 
+    transition: height 0.3s ease-in-out;
+    z-index: -1; 
+}
+
+.download-btn:hover::before {
+    height: 100%;
+}
+
+.download-btn:hover {
+    color: white; 
+}
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 50px;
+    background: url('background-texture.png') no-repeat center center/cover;
+}
+
+.hero-content {
+    display: flex;
+    max-width: 50%;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.hero-content h2 {
+    color: var(--primary-color);
+    font-size: 28px;
+}
+
+.hero-content h1 {
+    font-size: 64px;
+    margin: 10px 0;
+}
+
+.hero-content .highlight {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.hero-content .city {
+    color: rgb(151, 7, 7);
+}
+
+.about-btn {
+    display: inline-block;
+    border: 2px solid var(--primary-color);
+    background: var(--primary-color);
+    color: white;
+    padding: 10px 25px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    z-index: 1;
+    font-weight: 500;
+    font-size: 18px;
+    position: relative; /* Add this */
+    overflow: hidden; /* Ensures smooth animation */
+}
+
+.about-btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%; 
+    background: var(--primary-color);
+    border-radius: 50px; 
+    transition: transform 0.3s ease-in-out; 
+    z-index: -1;
+    transform: scaleY(1); /* Initially visible */
+    transform-origin: bottom; /* Animate from bottom */
+}
+
+.about-btn:hover::before {
+    transform: scaleY(0); /* Hide on hover */
+}
+
+.about-btn:hover {
+    background-color: transparent;
+    color: black; 
+}
+
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons img {
+    width: 24px;
+    margin-right: 10px;
+}
+
+.hero-image {
+    margin-right: 50px;
+    position: relative;
+}
+
+.hero-image img {
+    width: 500px;
+    border-radius: 10px;
+} 
+
+.floating-icons {
+    position: absolute;
+    top: 20px;
+    right: -40px;
+}
+
+.floating-icons1 {
+    position: absolute;
+    top : 120px;
+    right: 400px;
+}
+
+.floating-icons2 {
+    position: absolute;
+    top : 170px;
+    right: 30px;
+}
+
+
+.floating-icons3 {
+    position: absolute;
+    top : 480px;
+    right: 200px;
+}
+
+.floating-icons img {
+    width: 50px;
+    margin-top: -150px;
+    margin-right: 15px;
+    animation: float 3s infinite alternate ease-in-out;
+}
+
+@keyframes float {
+    from { transform: translateY(0); }
+    to { transform: translateY(-10px); }
+}
+
+
+@media screen and (max-width: 1024px) {
+    header {
+        padding: 15px 30px;
+    }
+
+    .hero {
+        padding: 80px 30px;
+    }
+
+    .hero-content h1 {
+        font-size: 50px;
+    }
+
+    .hero-content h2 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none; 
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .download-btn {
+        margin-top: 15px;
+    }
+
+
+
+    /* Mobile menu toggle button */
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+    }
+
+    /* Show menu when active */
+    nav.active ul {
+        display: flex;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 90%;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .hero-image {
+        margin-right: 0;
+        margin-top: 30px;
+    }
+
+    .floating-icons img {
+        width: 40px;
+        margin-top: -100px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content h2 {
+        font-size: 20px;
+    }
+
+    .floating-icons {
+        display: none; /* Hide floating icons on small screens */
+    }
+
+    .download-btn, .about-btn {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* second section  */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Portfolio Title & Description */
+.portfolio-subtitle {
+    color: #ff5b00;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.portfolio-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.portfolio-desc {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* Filters */
+.portfolio-filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.portfolio-filters span {
+    color: #666;
+    transition: color 0.3s ease-in-out;
+}
+
+.portfolio-filters .active,
+.portfolio-filters span:hover {
+    color: #ff5b00;
+}
+
+/* Portfolio Grid */
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.portfolio-item {
+    width: 30%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.05);
+}
