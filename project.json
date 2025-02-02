@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Restaurant of Tangier",
+        "description": "A dynamic web application showcasing all restaurants in Tangier, with features like detailed restaurant pages, an admin panel for managing data, and a search bar for easy navigation.",
+        "image": "https://raw.githubusercontent.com/abdelhaymallouli/Restaurant-of-Tangier/main/screenshots/homepage.png",
+        "url": "https://github.com/abdelhaymallouli/Restaurant-of-Tangier"
+    },
+    {
+        "name": "WeatherWise",
+        "description": "WeatherWise is a weather application built with Tkinter. This app allows users to check the current weather conditions for various locations worldwide, displaying data such as temperature, humidity, wind speed, and atmospheric pressure.",
+        "image": "https://raw.githubusercontent.com/abdelhaymallouli/WeatherWise/main/screenshots/logo.png",
+        "url": "https://github.com/abdelhaymallouli/WeatherWise"
+    },
+    {
+        "name": "WordHaven-Bookstore",
+        "description": "An interactive and dynamic bookstore web application that fetches books from a JSON file, displays them with animations, allows users to add books to a wishlist, view detailed information, and explore related books by category.",
+        "image": "https://raw.githubusercontent.com/abdelhaymallouli/WordHaven-Bookstore/main/imgs/preview.png",
+        "url": "https://github.com/abdelhaymallouli/WordHaven-Bookstore"
+    },
+    {
+        "name": "cart-shopping",
+        "description": "A simple and responsive dessert shop webpage built with HTML, CSS, and JavaScript. Browse desserts, view prices, and simulate adding items to a shopping cart with a clean, modern design.",
+        "image": "https://raw.githubusercontent.com/abdelhaymallouli/cart-shopping/main/assets/screenshot1.png",
+        "url": "https://github.com/abdelhaymallouli/cart-shopping"
+    }
+]
