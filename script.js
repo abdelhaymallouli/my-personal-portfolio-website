@@ -53,7 +53,7 @@
     loadProjects();
 
 // contact Section
-document.getElementById('contact-form').addEventListener('submit', function(event) {
+document.getElementById('contact_form').addEventListener('submit', function(event) {
     event.preventDefault();
   
     const formData = new FormData(this);
@@ -68,4 +68,10 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     alert('Your message has been successfully submitted!');
     this.reset();
   });
+
   
+
+  document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Message Sent Successfully!');
+  });
